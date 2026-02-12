@@ -147,13 +147,13 @@
     <h2>Method</h2>
     <p>
       AIDD operates entirely in a discrete token space. Raw audio waveforms are first converted
-      into compact sequences of discrete tokens using a pretrained <b>WavTokenizer</b>.
-      A <b>Diffusion Transformer (DiT)</b> then performs inpainting by learning the reverse
+      into compact sequences of discrete tokens using a pretrained WavTokenizer.
+      A Diffusion Transformer (DiT) then performs inpainting by learning the reverse
       discrete diffusion process with an absorbing mask state.
     </p>
     <p>
-      To better model structured missing regions, we introduce <b>span-based masking</b> during
-      training. Additionally, a <b>derivative-based regularization loss</b> encourages smooth
+      To better model structured missing regions, we introduce span-based masking during
+      training. Additionally, a derivative-based regularization loss encourages smooth
       temporal dynamics in token embedding space, improving perceptual coherence of the
       reconstructed audio.
     </p>
@@ -168,12 +168,13 @@
 
 <!-- ================= AUDIO EXAMPLES ================= -->
 
-<h2 style="text-align:center; margin-top:3rem;">Audio Examples</h2>
+<h2 style="margin-top:3rem;">Audio Examples</h2>
 
-<p style="text-align:center;">
+<p>
 Qualitative examples from MAESTRO with 375 ms and 750 ms gaps.
 Each row shows Original, Masked, and AIDD Reconstruction.
 </p>
+
 
 <!-- ================= 375 ms ================= -->
 <h3>Gap: 375 ms</h3>
